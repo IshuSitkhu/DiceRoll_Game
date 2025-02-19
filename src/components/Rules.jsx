@@ -1,42 +1,4 @@
-// import React from 'react'
-// import styled from 'styled-components'
 
-// const Rules = ({toggle}) => {
-    
-//   return (
-//     <RuleContainer>
-//       <h1>How to play dice game</h1>
-//       <div className="steps">
-//         <ul>
-//             <li>Select any number</li>
-//             <li>Click on dice image</li>
-//             <li>after click on  dice  if selected number is equal to dice number you will get same point as dice </li>
-//             <li>if you get wrong guess then  2 point will be dedcuted</li>
-//         </ul>
-        
-//       </div>
-//       <button onClick={toggle}>Hide Rules</button>
-//     </RuleContainer>
-//   )
-// }
-
-// export default Rules
-
-
-// const RuleContainer = styled.div`
-// background-color:#FBF1F1;
-// boarder:1px solid black;
-//   user-select: none !important; 
-//     outline: none !important; 
-
-// h1{
-// text-align:center;
-// }
-
-// .steps{
-//     font-size:25px;
-// }
-// `
 
 import React from "react";
 import styled from "styled-components";

@@ -30,30 +30,56 @@ const NumberSelector = ({ SetError, error, selectedNumber, setSelectedNumber }) 
 
 export default NumberSelector;
 
+// const NumberSelectorContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: end;
+//     user-select: none !important; 
+//     outline: none !important; 
+
+//   .flex {
+//     display: flex;
+//     gap: 24px;
+//   }
+
+//   h1 {
+//     background-color: fbf1f1;
+//     border: 1px solid black;
+//     color: red;
+//     padding: 5px;
+//   }
+
+//   p {
+//     font-size: 24px;
+//     font-weight: 700;
+//   }
+// `;
+
 const NumberSelectorContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: end;
-    user-select: none !important; 
-    outline: none !important; 
+  align-items: center;
 
   .flex {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap; /* Ensures numbers wrap on small screens */
+    gap: 10px;
   }
 
   h1 {
-    background-color: fbf1f1;
-    border: 1px solid black;
-    color: red;
-    padding: 5px;
+    font-size: 1.5rem;
   }
 
-  p {
-    font-size: 24px;
-    font-weight: 700;
+  @media (max-width: 600px) {
+    .flex {
+      justify-content: center;
+    }
+    h1 {
+      font-size: 1.2rem;
+    }
   }
 `;
+
 
 const Box = styled.div`
   height: 72px;
